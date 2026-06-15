@@ -1,0 +1,42 @@
+{
+  "name": "paperpit",
+  "version": "0.1.0",
+  "description": "Quote-first / depth-aware fill simulator for paper trading — realistic fills, fees, slippage and funding for spot and perpetuals.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Pratiikpy",
+  "repository": { "type": "git", "url": "git+https://github.com/Pratiikpy/PaperPit.git" },
+  "homepage": "https://github.com/Pratiikpy/PaperPit#readme",
+  "bugs": { "url": "https://github.com/Pratiikpy/PaperPit/issues" },
+  "keywords": [
+    "paper-trading",
+    "backtesting",
+    "fill-simulation",
+    "slippage",
+    "market-microstructure",
+    "order-book",
+    "perpetuals",
+    "funding-rate",
+    "tokenized-stocks",
+    "mcp"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "bin": {
+    "paperpit-mcp": "src/mcp.ts"
+  },
+  "files": ["src", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "node --import tsx --test \"test/**/*.test.ts\"",
+    "example": "tsx examples/basic.ts",
+    "replay": "tsx examples/replay.ts",
+    "mcp": "tsx src/mcp.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
