@@ -29,7 +29,7 @@
   "files": ["src", "README.md", "LICENSE"],
   "scripts": {
     "build": "tsc --noEmit",
-    "test": "node --import tsx --test \"test/**/*.test.ts\"",
+    "test": "node --import tsx --test test/account.test.ts test/engine.test.ts test/fills.test.ts",
     "example": "tsx examples/basic.ts",
     "replay": "tsx examples/replay.ts",
     "mcp": "tsx src/mcp.ts"
